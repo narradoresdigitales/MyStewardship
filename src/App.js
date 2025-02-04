@@ -25,7 +25,7 @@ function Header(mainDiv) {
     textContent: 'Contact',
   })
 
-  const nav = createElement('nav', {}, [page1, page2, page3]);
+  const nav = createElement('nav', {}, [page1, page2, page3, page4]);
 
   return createElement('header', {}, [appTitle, nav]);
 }
