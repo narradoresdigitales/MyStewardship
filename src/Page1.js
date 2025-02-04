@@ -16,4 +16,4 @@ function Page1() {
   return createElement('div', {}, [title, page3Link, welcomeMsg]);
 }
 
-export default Page1;
+export default Page1;  
