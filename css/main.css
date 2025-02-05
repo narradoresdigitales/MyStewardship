@@ -1,38 +1,181 @@
+
+/* Header styles */
 header {
+  background-color: #34495e; /* Dark background for header */
+  padding: 20px;
+  text-align: center;
+  color: #ecf0f1; /* Light text color for header */
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
+  justify-content: center;
+  gap: 20px; /* Add space between links */
+}
+
+nav a {
+  color: #ecf0f1; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for nav links */
+nav a:hover {
+  background-color: #1abc9c; /* Hover background color */
+  transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Active link style */
+nav a.active {
+  color: #16a085; /* Highlight color for active link */
+}
+
+.footer-container {
+  margin: 20px 10px; /* Align with sections */
+  padding: 10px;
+  text-align: center;
+  background-color: #34495e; /* Dark background for footer */
+}
+
+footer span {
+  color: #ecf0f1; /* Light text color */
+}
+
+
+
+
+/* Hamburger button styles */
+.hamburger-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ecf0f1; /* Light color for the hamburger icon */
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+/* Show the hamburger button on small screens */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block; /* Make it visible */
+    position: absolute;
+    top: 20px; /* Adjust to fit your header */
+    right: 20px; /* Place it on the right side */
+  }
+
+  /* Adjust the navigation layout when the hamburger button is shown */
+  nav {
+    display: none; /* Initially hide the navigation links */
+    flex-direction: column;
+    position: absolute;
+    top: 90px; /* Adjust depending on header height */
+    right: 0;
+    width: 100%;
+    background-color: #34495e;
+  }
+
+  /* Show the nav links when the hamburger button is clicked */
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* Links take up the full width */
+    border-bottom: 1px solid #ecf0f1; /* Optionally, add a separator between links */
+  }
 }
 
 footer {
+  color: black; /* Set text color for all content inside the footer */
+  text-align: center; /* Optional: center the text */
+  padding: 10px 0; /* Optional: add some padding */
+}
+
+footer span {
+  font-size: 1rem; /* Optional: adjust font size */
+}
+
+
+
+
+
+
+/* Page1.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
   text-align: center;
-  padding: 16px;
+  margin-top: 20px;
 }
 
-nav {
-  display: flex;
-  gap: 8px;
+.section {
+  padding: 20px;
+  margin: 20px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.counter-footer {
-  display: flex;
-  gap: 8px;
+.section h3 {
+  color: #2c3e50;
 }
 
-.counter-button {
-  width: 64px;
-  height: 32px;
-  font-size: 24px;
+.section p {
+  color: #7f8c8d;
 }
 
-.counter-label {
-  display: block;
-  font-size: 32px;
-  background: #f7f7f7;
-  width: 136px;
-  padding: 4px;
-  box-sizing: border-box;
-  margin-bottom: 8px;
-  text-align: center;
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mindfulness section styles */
+.mindfulness {
+  background-color: #ecf0f1;
+}
+
+.mindfulness:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Eco-friendly section styles */
+.eco-friendly {
+  background-color: #bdc3c7;
+}
+
+.eco-friendly:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.section {
+  animation: fadeIn 1s ease-out;
 }
