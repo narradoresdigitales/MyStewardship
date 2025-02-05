@@ -1,8 +1,9 @@
 import { createElement } from './utils';
 
 import Page1 from './Page1';
-import Counter from './Counter';
+import Page2 from './Page2';
 import Page3 from './Page3';
+import Page4 from './Page4';
 
 export function initRouter(mainView) {
   function updateView(newView) {
@@ -17,12 +18,18 @@ export function initRouter(mainView) {
         break;
 
       case '#/page2':
-        updateView(Counter());
+        updateView(Page2());
         break;
-
+      
+      
       case '#/page3':
         updateView(Page3());
         break;
+
+        case '#/page4':
+        updateView(Page4());
+        break;
+      
 
       default:
         updateView(createElement('h3', { textContent: '404 Page Not Found' }));
