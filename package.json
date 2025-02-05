@@ -1,12 +1,14 @@
 {
-  "name": "MyLingua",
+
+  "name": "MyStewardship",
   "version": "1.0.0",
   "description": "WDD330 final project",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "Marcus 'Sil' Palmer <narradoresdigitales@gmail.com>",
+
+  "author": "Marcus 'sil' Palmer <narradoresdigitales@gmail.com>",
   "dependencies": {
     "parcel": "^2.8.3",
     "prettier": "^2.8.4"

@@ -1,2 +1,2 @@
-# my-cool-project
+# MyStewardship
 WDD330 final project
