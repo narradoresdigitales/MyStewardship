@@ -1,4 +1,5 @@
 {
+
   "name": "MyStewardship",
   "version": "1.0.0",
   "description": "WDD330 final project",
@@ -6,6 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
+
   "author": "Marcus 'sil' Palmer <narradoresdigitales@gmail.com>",
   "dependencies": {
     "parcel": "^2.8.3",

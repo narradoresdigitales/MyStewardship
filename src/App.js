@@ -3,25 +3,29 @@ import { initRouter } from './router';
 
 function Header(mainDiv) {
   const appTitle = createElement('h1', {
-    textContent: 'My Cool Project',
+    textContent: 'MyLingua',
     className: 'heading',
   });
 
   // nav items
   const page1 = createElement('a', {
     href: '/#/page1',
-    textContent: 'Page 1',
+    textContent: 'Vocabulary',
   });
   const page2 = createElement('a', {
     href: '/#/page2',
-    textContent: 'Page 2',
+    textContent: 'Flash Cards',
   });
   const page3 = createElement('a', {
     href: '/#/page3',
-    textContent: 'Page 3',
+    textContent: 'Videos',
   });
+  const page4 = createElement('a', {
+    href: '/#/page4',
+    textContent: 'Contact',
+  })
 
-  const nav = createElement('nav', {}, [page1, page2, page3]);
+  const nav = createElement('nav', {}, [page1, page2, page3, page4]);
 
   return createElement('header', {}, [appTitle, nav]);
 }
