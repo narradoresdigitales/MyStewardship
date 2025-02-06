@@ -49,7 +49,7 @@ hamburgerBtn.addEventListener('click', () => {
 
   const nav = createElement('nav', {}, [page1, page2, page3, page4]);
 
-  return createElement('header', {}, [appTitle, hamburgerBtn]);
+  return createElement('header', {}, [appTitle, hamburgerBtn, nav]);
 }
 
 function Footer() {
@@ -57,7 +57,7 @@ function Footer() {
     textContent: `Copyright © ${new Date().getFullYear()}`,
   });
 
-  return createElement('footer', {}, [copyright]);
+  return createElement('footer', { className: 'footer-container'}, [copyright]);
 }
 
 function App() {
