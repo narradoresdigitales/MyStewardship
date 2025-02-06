@@ -179,3 +179,91 @@ a:hover {
 .section {
   animation: fadeIn 1s ease-out;
 }
+
+
+/* Page 2  */
+
+
+
+/* Map container */
+#map {
+  height: 400px; /* Set a fixed height for the map */
+  width: 100%; /* Make the map responsive */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Search container */
+.recycling-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ecf0f1; /* Light background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.recycling-search input,
+.recycling-search select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 1rem;
+}
+
+/* Search button */
+.recycling-search button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recycling-search button:hover {
+  background-color: #2980b9;
+}
+
+/* Loading message style */
+.recycling-search .loading {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Loading spinner style */
+.recycling-search .loading-spinner {
+  margin-top: 10px;
+}
+
+/* Error message style */
+.recycling-search .error {
+  color: #e74c3c;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Ensure elements are responsive */
+@media (max-width: 768px) {
+  .recycling-search input,
+  .recycling-search select,
+  .recycling-search button {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  #map {
+    height: 300px; /* Adjust map height for smaller screens */
+  }
+}
+
+/* Page 2  */
