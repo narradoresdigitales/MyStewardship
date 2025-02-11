@@ -420,6 +420,14 @@ a:hover {
   .video-card iframe {
     height: 180px; /* Adjust iframe height for small screens */
   }
+
+  .video-card h4 {
+    font-size: 1rem;
+  }
+
+  .video-card p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Page 3 *//* YouTube Videos Search Elements */
@@ -484,3 +492,42 @@ h2 {
     width: 30%; /* Adjust button width on smaller screens */
   }
 }
+
+
+
+/* BEGIN Page4.js STYLES */
+
+.recommended-videos {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 20px; /* Space between video cards */
+  justify-content: center; /* Center the grid */
+  margin-top: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Media query for small screens (phones, tablets) */
+@media (max-width: 768px) {
+  .recommended-videos {
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .video-card {
+      width: 250px; /* Adjust the width of cards on small screens */
+  }
+
+  .video-card iframe {
+      height: 180px; /* Adjust the iframe height for smaller screens */
+  }
+
+  .video-card h4 {
+      font-size: 1rem; /* Adjust the title font size */
+  }
+
+  .video-card p {
+      font-size: 0.9rem; /* Adjust the description font size */
+  }
+}
+
+/* END Page4.js STYLES */
