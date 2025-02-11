@@ -16,7 +16,7 @@ function Header(mainDiv) {
 
   const page2 = createElement('a', {
     href: '/#/page2',
-    textContent: 'Mindfulness',
+    textContent: 'RecycleGeo',
   });
 
 
@@ -28,7 +28,7 @@ function Header(mainDiv) {
 
   const page4 = createElement('a', {
     href: '/#/page4',
-    textContent: 'Contact',
+    textContent: 'LearningHub',
   })
 
 // hamburger button 
