@@ -183,6 +183,24 @@ a:hover {
 
 /* BEGIN Page 2  */
 
+/* <p> element */
+
+.tips-p {
+  color: red;
+}
+
+/* <ul> element */
+.search-tips {
+  list-style: none;
+}
+
+/* 2nd <p> element */
+
+.search-p {
+  color: blue;
+}
+
+
 /* Search Input */
 #locationSearch {
   padding: 10px;
