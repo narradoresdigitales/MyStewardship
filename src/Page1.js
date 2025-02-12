@@ -49,8 +49,20 @@ const LearningHub = createElement('div', {
   ]
 );
 
+// Gamify Goals
 
-  return createElement('div', {}, [title, mindfulnessDiv, ecofriendlyDiv, LearningHub]);
+const goalsGamify = createElement('div', {
+  className: 'section eco-friendly'}, [
+    createElement('h3', {textContent: 'Become an Eco-Hero'}),
+    createElement('p', {textContent: 'Here I talk about mindfulness practices in being eco-friendly'}),
+    
+  ]
+);
+
+
+
+
+  return createElement('div', {}, [title, mindfulnessDiv, ecofriendlyDiv, LearningHub, goalsGamify]);
 
 
 }
