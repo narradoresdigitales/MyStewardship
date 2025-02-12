@@ -55,6 +55,10 @@ const goalsGamify = createElement('div', {
   className: 'section eco-friendly'}, [
     createElement('h3', {textContent: 'Become an Eco-Hero'}),
     createElement('p', {textContent: 'Here I talk about mindfulness practices in being eco-friendly'}),
+    createElement('a', {
+      href: '/#/page5',
+      textContent: 'Go to Page 5'
+    })
     
   ]
 );
