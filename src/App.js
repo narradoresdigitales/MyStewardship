@@ -16,7 +16,7 @@ function Header(mainDiv) {
 
   const page2 = createElement('a', {
     href: '/#/page2',
-    textContent: 'RecycleGeo',
+    textContent: 'Recycle-Geo',
   });
 
 
@@ -30,6 +30,13 @@ function Header(mainDiv) {
     href: '/#/page4',
     textContent: 'LearningHub',
   })
+
+  const page5 = createElement('a', {
+    href: '/#/page5',
+    textContent: 'Eco-Hero',
+  })
+
+
 
 // hamburger button 
 
@@ -47,7 +54,7 @@ hamburgerBtn.addEventListener('click', () => {
 })
 
 
-  const nav = createElement('nav', {}, [page1, page2, page3, page4]);
+  const nav = createElement('nav', {}, [page1, page2, page3, page4, page5]);
 
   return createElement('header', {}, [appTitle, hamburgerBtn, nav]);
 }
