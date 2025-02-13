@@ -56,26 +56,32 @@ function Page3() {
   const pageContainer = createElement('div', {}, [
     searchTitle,
     searchInstructions,
+    pSearch,
     ul,
     title,
     searchContainer, // Add search container here
     videoContainer,  // Container for displaying the videos
   ]);
 
-  // 🔹 Attach event listener AFTER appending elements to the DOM
-  setTimeout(() => {
-    const searchBtn = document.getElementById('search-button');
-    if (searchBtn) {
-      searchBtn.addEventListener('click', () => {
-        const query = searchInput.value;
-        if (query) {
-          fetchYouTubeVideos(query);  // Fetch YouTube videos based on the query
-        }
-      });
-    } else {
-      console.error("Search button not found!");
+
+
+
+  /// 
+
+
+   // Attach event listener after the DOM is ready
+  searchButton.addEventListener('click', () => {
+    const query = searchInput.value;
+    if (query) {
+      fetchYouTubeVideos(query).then(videos => displayVideos(videos));
     }
-  }, 0); // Timeout ensures execution happens after DOM update
+  });
+
+
+/// 
+
+
+
 
   // Handle displaying videos in a grid format
   const displayVideos = (videos) => {
