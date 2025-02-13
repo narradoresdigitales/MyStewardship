@@ -2,15 +2,14 @@ import { createElement } from './utils';
 import { fetchYouTubeVideos } from './youTubeSearch';
 
 function Page3() {
-
   const searchTitle = createElement('h2', { textContent: 'Learn to be More-Eco-Friendly' });
 
   const searchInstructions = createElement('p', { textContent: 
       ' Looking for ways to live a greener lifestyle? Use the search bar below to find YouTube videos on:', className: 'tips-p'
-  })
-  
+  });
+
   const ul = createElement('ul', {className: 'search-tips'}, []);
-  
+
   const items = [
       'Sustainable living tips',
       'Zero waste practices',
@@ -18,7 +17,7 @@ function Page3() {
       'Energy-saving hacks',
       'Eco-friendly product reviews'
   ];
-  
+
   // Add list items to the unordered list
   for (const item of items) {
       const li = createElement('li', { textContent:`✅ ${item}` });
@@ -27,10 +26,7 @@ function Page3() {
   
   const pSearch = createElement('p', { innerHTML:'Simply enter a topic (e.g., "how to recycle plastic") and hit search!', className: 'search-p' });
 
-
-// Search suggestions
-
-  // Create elements for the YouTube search interface
+  // Search suggestions
   const title = createElement('h2', { textContent: 'Search YouTube Videos' });
 
   const searchInput = createElement('input', {
@@ -59,29 +55,9 @@ function Page3() {
     pSearch,
     ul,
     title,
-    searchContainer, // Add search container here
-    videoContainer,  // Container for displaying the videos
+    searchContainer, 
+    videoContainer,  
   ]);
-
-
-
-
-  /// 
-
-
-   // Attach event listener after the DOM is ready
-  searchButton.addEventListener('click', () => {
-    const query = searchInput.value;
-    if (query) {
-      fetchYouTubeVideos(query).then(videos => displayVideos(videos));
-    }
-  });
-
-
-/// 
-
-
-
 
   // Handle displaying videos in a grid format
   const displayVideos = (videos) => {
@@ -112,14 +88,13 @@ function Page3() {
     });
   };
 
-  // Modify `fetchYouTubeVideos` to use the `displayVideos` function
-  const modifiedFetchYouTubeVideos = async (query) => {
-    const videos = await fetchYouTubeVideos(query);
-    displayVideos(videos);  // Call displayVideos with the fetched videos
-  };
-
-  // Override fetchYouTubeVideos with the modified version
-  fetchYouTubeVideos = modifiedFetchYouTubeVideos;
+  // Attach event listener to the search button
+  searchButton.addEventListener('click', () => {
+    const query = searchInput.value;
+    if (query) {
+      fetchYouTubeVideos(query).then(videos => displayVideos(videos));
+    }
+  });
 
   return pageContainer;
 }
