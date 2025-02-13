@@ -2,6 +2,34 @@ import { createElement } from './utils';
 import { fetchYouTubeVideos } from './youTubeSearch';
 
 function Page3() {
+
+  const searchTitle = createElement('h2', { textContent: 'Learn to be More-Eco-Friendly' });
+
+  const searchInstructions = createElement('p', { textContent: 
+      ' Looking for ways to live a greener lifestyle? Use the search bar below to find YouTube videos on:', className: 'tips-p'
+  })
+  
+  const ul = createElement('ul', {className: 'search-tips'}, []);
+  
+  const items = [
+      'Sustainable living tips',
+      'Zero waste practices',
+      'Recycling and upcycling guides',
+      'Energy-saving hacks',
+      'Eco-friendly product reviews'
+  ];
+  
+  // Add list items to the unordered list
+  for (const item of items) {
+      const li = createElement('li', { textContent:`✅ ${item}` });
+      ul.appendChild(li);
+  }
+  
+  const pSearch = createElement('p', { innerHTML:'Simply enter a topic (e.g., "how to recycle plastic") and hit search!', className: 'search-p' });
+
+
+// Search suggestions
+
   // Create elements for the YouTube search interface
   const title = createElement('h2', { textContent: 'Search YouTube Videos' });
 
@@ -26,6 +54,9 @@ function Page3() {
 
   // Create a parent container for the page elements
   const pageContainer = createElement('div', {}, [
+    searchTitle,
+    searchInstructions,
+    ul,
     title,
     searchContainer, // Add search container here
     videoContainer,  // Container for displaying the videos
