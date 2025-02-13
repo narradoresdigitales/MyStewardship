@@ -5,6 +5,11 @@ function Header(mainDiv) {
   const appTitle = createElement('h1', {
     textContent: 'MyStewardship',
     className: 'heading',
+    
+  });
+
+  const subTitle = createElement('h2', {
+    textContent: 'Why should I recycle?',
   });
 
   // nav items
@@ -54,7 +59,9 @@ hamburgerBtn.addEventListener('click', () => {
 })
 
 
-  const nav = createElement('nav', {}, [page1, page2, page3, page4, page5]);
+  const nav = createElement('nav', {
+    className: 'myNav',
+  }, [page1, page2, page3, page4, page5]);
 
   return createElement('header', {}, [appTitle, hamburgerBtn, nav]);
 }

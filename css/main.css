@@ -62,7 +62,7 @@ footer span {
   border: none;
   font-size: 2rem;
   color: #ecf0f1; /* Light color for the hamburger icon */
-  display: block; /* Initially hidden */
+  display: none; /* Initially hidden */
   cursor: pointer;
   position: absolute;
 }
@@ -200,6 +200,14 @@ a:hover {
 /* BEGIN Page 2  */
 
 /* <p> element */
+
+
+
+#map-container {
+  display: content;
+  z-index: -1;
+}
+
 
 .tips-p {
   color: red;
