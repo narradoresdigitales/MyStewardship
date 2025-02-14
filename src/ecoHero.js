@@ -14,6 +14,7 @@ export function initEcoHero() {
     const goalInput = document.createElement("input");
     goalInput.type = "number";
     goalInput.placeholder = "Set your recycling goal (e.g., 10 items)";
+    goalInput.classList.add("goalSet");
 
     // Buttons with added classes
     const setGoalBtn = document.createElement("button");

@@ -6,10 +6,12 @@ function Page5() {
         textContent: 'Becoming an Eco-Hero' 
     });
 
+    const motivateMsg = createElement('h3', {className: 'motivate-msg', textContent: 'Refresh the page to begin your journey'});
+
     const appContainer = createElement('div', { id: 'app' });
 
     // Return the container and title elements
-    const pageElement = createElement('div', {}, [title, appContainer]);
+    const pageElement = createElement('div', {className: 'gamify'}, [title, motivateMsg,appContainer]);
 
     // Initialize eco-hero functionality after the page is rendered
     // Ensure the app container is part of the DOM before calling initEcoHero
