@@ -14,7 +14,7 @@ const mapContainer = createElement('div', {id: 'map-container' });
 
 
 // Create the main page container
-const pageContainer = createElement('div', {}, [mapContainer]);
+const pageContainer = createElement('div', {className: 'map-page'}, [mapContainer]);
 
 
 // Wait for the DOM to be ready before adding the map

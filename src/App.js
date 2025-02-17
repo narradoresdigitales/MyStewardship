@@ -63,8 +63,21 @@ hamburgerBtn.addEventListener('click', () => {
     className: 'myNav',
   }, [page1, page2, page3, page4, page5]);
 
+  /// Fix for nav
+// Add click event to each nav link
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active'); // Hide nav when a link is clicked
+  });
+});
+
+/// Fix for nav
+
   return createElement('header', {}, [appTitle, hamburgerBtn, nav]);
 }
+
+
+
 
 function Footer() {
   const copyright = createElement('span', {
