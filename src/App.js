@@ -4,14 +4,9 @@ import { initRouter } from './router';
 function Header(mainDiv) {
   const appTitle = createElement('h1', {
     textContent: 'MyStewardship',
-    className: 'heading',
+    className: 'heading' }); 
     
-  });
-
-  const subTitle = createElement('h2', {
-    textContent: 'Why should I recycle?',
-  });
-
+const subTitle =createElement('h2', {className: 'sub-title', textContent: 'Doing my part to care for Mother Earth!'});
   // nav items
   const page1 = createElement('a', {
     href: '/#/page1',
@@ -73,7 +68,7 @@ nav.querySelectorAll('a').forEach(link => {
 
 /// Fix for nav
 
-  return createElement('header', {}, [appTitle, hamburgerBtn, nav]);
+  return createElement('header', {}, [appTitle, subTitle,hamburgerBtn, nav]);
 }
 
 

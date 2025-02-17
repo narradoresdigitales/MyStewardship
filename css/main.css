@@ -20,6 +20,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 20px; /* Add space between links */
+  margin-top: 20px;
   
 }
 

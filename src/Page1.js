@@ -3,8 +3,9 @@ import { createElement } from './utils';
 function Page1() {
   
   
-  const title = createElement('h2', { 
-    textContent: 'About Stewardship' });
+ // const title = createElement('h2', { 
+   // textContent: 'About Stewardship' });
+
 
     //create <p> 
 
@@ -66,7 +67,7 @@ const goalsGamify = createElement('div', {
 
 
 
-  return createElement('div', {}, [title, mindfulnessDiv, ecofriendlyDiv, LearningHub, goalsGamify]);
+  return createElement('div', {}, [mindfulnessDiv, ecofriendlyDiv, LearningHub, goalsGamify]);
 
 
 }
