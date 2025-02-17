@@ -83,38 +83,9 @@ nav a.active {
   font-weight: bold;
 }
 
-/* Show the hamburger button on small screens */
-@media (max-width: 768px) {
-  .hamburger-btn {
-    display: block; /* Make it visible */
-    position: absolute;
-    top: 20px; /* Adjust to fit your header */
-    right: 20px; /* Place it on the right side */
-  }
 
-  /* Adjust the navigation layout when the hamburger button is shown */
-  nav {
-    display: none; /* Initially hide the navigation links */
-    flex-direction: column;
-    position: absolute;
-    top: 90px; /* Adjust depending on header height */
-    right: 0;
-    width: 100%;
-    background-color: #34495e;
-  }
 
-  /* Show the nav links when the hamburger button is clicked */
-  nav.active {
-    display: flex;
-  }
 
-  nav a {
-    text-align: center;
-    padding: 10px;
-    width: 100%; /* Links take up the full width */
-    border-bottom: 1px solid #ecf0f1; /* Optionally, add a separator between links */
-  }
-}
 
 footer {
   color: black; /* Set text color for all content inside the footer */
@@ -331,32 +302,7 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
 
-  
-
-  #locationSearch {
-    width: 70%; /* Adjust input width on smaller screens */
-    margin-left: 10px;
-    margin-bottom: 10px;
-    
-  }
-
-  #serviceSelect {
-    width: 60%; /* Adjust select width on smaller screens */
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  #searchButton {
-    width: 60%; /* Adjust button width on smaller screens */
-    margin-left: 10px;
-    background-color: #388E3C; /* Darker green for buttons */
-  }
-
-
-}
 
 
 
@@ -382,18 +328,7 @@ a:hover {
   margin-top: 10px;
 }
 
-/* Ensure elements are responsive */
-@media (max-width: 768px) {
-  .recycling-search input,
-  .recycling-search select,
-  .recycling-search button {
-    width: 90%; /* Adjust width for smaller screens */
-  }
 
-  #map {
-    height: 300px; /* Adjust map height for smaller screens */
-  }
-}
 
 /* END Page 2  */
 
@@ -449,28 +384,7 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .video-grid {
-    gap: 20px; /* Reduce the gap for small screens */
-  }
 
-  .video-card {
-    width: 250px; /* Adjust the card width for smaller screens */
-  }
-
-  .video-card iframe {
-    height: 180px; /* Adjust iframe height for small screens */
-  }
-
-  .video-card h4 {
-    font-size: 1rem;
-  }
-
-  .video-card p {
-    font-size: 0.9rem;
-  }
-}
 
 /* Page 3 *//* YouTube Videos Search Elements */
 
@@ -524,17 +438,7 @@ h2 {
   align-items: center;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  #search-input {
-    width: 60%; /* Adjust input width on smaller screens */
-  }
 
-  #search-button {
-    width: 30%; /* Adjust button width on smaller screens */
-    background-color: #388E3C; /* Darker green for buttons */
-  }
-}
 
 
 
@@ -550,28 +454,7 @@ h2 {
   box-sizing: border-box;
 }
 
-/* Media query for small screens (phones, tablets) */
-@media (max-width: 768px) {
-  .recommended-videos {
-      gap: 10px; /* Reduce gap for smaller screens */
-  }
 
-  .video-card {
-      width: 250px; /* Adjust the width of cards on small screens */
-  }
-
-  .video-card iframe {
-      height: 180px; /* Adjust the iframe height for smaller screens */
-  }
-
-  .video-card h4 {
-      font-size: 1rem; /* Adjust the title font size */
-  }
-
-  .video-card p {
-      font-size: 0.9rem; /* Adjust the description font size */
-  }
-}
 
 /* END Page4.js STYLES */
 
@@ -598,9 +481,44 @@ h2 {
   
 }
 
-.green, .yellow, .red, .goalSet {
-  color: red;
+.green {
+  background-color: #4CAF50; /* Green background */
+  color: white;
 }
+
+.yellow {
+  background-color: #FFEB3B; /* Yellow background */
+  color: black;
+}
+
+.red {
+  background-color: #F44336; /* Red background */
+  color: white;
+}
+
+.goalSet {
+  background-color: #388E3C; /* Dark green */
+  color: white;
+}
+
+/* Hover effects for buttons */
+.green:hover {
+  background-color: #45a049;
+}
+
+.yellow:hover {
+  background-color: #f4c700;
+}
+
+.red:hover {
+  background-color: #e53935;
+}
+
+.goalSet:hover {
+  background-color: #2c6f2e;
+}
+
+
 
 
 
@@ -613,13 +531,13 @@ h2 {
   margin-bottom: 20px;
 }
 
-.progress-bar {
+#progressBar {
   height: 20px;
-  width: 0%; /* Initial width */
-  background-color: #388E3C; /* Dark green for progress */
+  background-color: #388E3C; /* Dark green */
   border-radius: 5px;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease;
 }
+
 
 /* Points Display */
 .points-container {
@@ -627,12 +545,59 @@ h2 {
   justify-content: space-between;
   width: 80%;
   margin-bottom: 20px;
+  padding: 10px;
 }
+
 
 .points-container span {
   font-size: 1.2rem;
   color: #2c3e50;
 }
+
+/*  Added styles for log buttons */
+
+.log-buttons-container {
+    display: flex;                /* Flexbox container for the buttons */
+    gap: 10px;                    /* Space between the buttons */
+    justify-content: center;      /* Center the buttons horizontally */
+    margin-top: 10px;             /* Add some spacing from the progress bar */
+}
+
+#logRecycle, #removeLog {
+    padding: 5px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logRecycle {
+    background-color: #388E3C;    /* Green color for log button */
+    color: white;
+}
+
+#logRecycle:hover {
+    background-color: #4CAF50;
+}
+
+#removeLog {
+    background-color:  #FF6347;    /* Red color for remove button */
+    color: white;
+}
+
+#removeLog:hover {
+    background-color: #e53935;
+}
+
+
+
+
+
+
+/*  */
+
+
 
 /* Achievement Badges */
 .badge-container {
@@ -699,14 +664,177 @@ h2 {
   background-color: #4CAF50; /* Slightly lighter green on hover */
 }
 
-/* Responsive Design for Smaller Screens */
+
+
+
+/*  MEDIA QUERIES HERE  */
+
+/* Show the hamburger button on small screens */
+@media (max-width: 768px) {
+  .hamburger-btn {
+    display: block; /* Make it visible */
+    position: absolute;
+    top: 20px; /* Adjust to fit your header */
+    right: 20px; /* Place it on the right side */
+  }
+
+  /* Adjust the navigation layout when the hamburger button is shown */
+  nav {
+    display: none; /* Initially hide the navigation links */
+    flex-direction: column;
+    position: absolute;
+    top: 90px; /* Adjust depending on header height */
+    right: 0;
+    width: 100%;
+    background-color: #34495e;
+  }
+
+  /* Show the nav links when the hamburger button is clicked */
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* Links take up the full width */
+    border-bottom: 1px solid #ecf0f1; /* Optionally, add a separator between links */
+  }
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  
+
+  #locationSearch {
+    width: 70%; /* Adjust input width on smaller screens */
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+  }
+
+  #serviceSelect {
+    width: 60%; /* Adjust select width on smaller screens */
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  #searchButton {
+    width: 60%; /* Adjust button width on smaller screens */
+    margin-left: 10px;
+    background-color: #388E3C; /* Darker green for buttons */
+  }
+
+
+}
+
+
+/* Ensure elements are responsive */
+@media (max-width: 768px) {
+  .recycling-search input,
+  .recycling-search select,
+  .recycling-search button {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  #map {
+    height: 300px; /* Adjust map height for smaller screens */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .video-grid {
+    gap: 20px; /* Reduce the gap for small screens */
+  }
+
+  .video-card {
+    width: 250px; /* Adjust the card width for smaller screens */
+  }
+
+  .video-card iframe {
+    height: 180px; /* Adjust iframe height for small screens */
+  }
+
+  .video-card h4 {
+    font-size: 1rem;
+  }
+
+  .video-card p {
+    font-size: 0.9rem;
+  }
+}
+/*  MEDIA QUERIES HERE  */
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #search-input {
+    width: 60%; /* Adjust input width on smaller screens */
+  }
+
+  #search-button {
+    width: 30%; /* Adjust button width on smaller screens */
+    background-color: #388E3C; /* Darker green for buttons */
+  }
+}
+/*  MEDIA QUERIES HERE  */
+
+
+
+
+/* Media query for small screens (phones, tablets) */
+@media (max-width: 768px) {
+  .recommended-videos {
+      gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .video-card {
+      width: 250px; /* Adjust the width of cards on small screens */
+  }
+
+  .video-card iframe {
+      height: 180px; /* Adjust the iframe height for smaller screens */
+  }
+
+  .video-card h4 {
+      font-size: 1rem; /* Adjust the title font size */
+  }
+
+  .video-card p {
+      font-size: 0.9rem; /* Adjust the description font size */
+  }
+}
+/*  MEDIA QUERIES HERE  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .gamify-container {
     padding: 20px 10px;
   }
 
   .progress-container {
-    width: 90%; /* Make progress bar wider on smaller screens */
+    width: 90%;
   }
 
   .points-container {
@@ -719,8 +847,14 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .badge {
+    width: 50px;
+    height: 50px;
+  }
+
   .gamify-button {
     width: 100%;
-    background-color: #388E3C; /* Darker green for buttons */
+    background-color: #388E3C;
   }
 }
+

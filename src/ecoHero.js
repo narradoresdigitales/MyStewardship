@@ -25,9 +25,14 @@ export function initEcoHero() {
     resetGoalBtn.textContent = "Reset Goal";
     resetGoalBtn.classList.add("red");  // Add class for styling
 
-    const removeLogBtn = document.createElement("button");
-    removeLogBtn.textContent = "Remove Log Item";
-    removeLogBtn.classList.add("yellow");  // Add class for styling
+
+    /// Removing this button 
+
+    // const removeLogBtn = document.createElement("button");
+    // removeLogBtn.textContent = "Remove Log Item";
+    // removeLogBtn.classList.add("yellow");  // Add class for styling
+
+    /// Removing this button
 
     // Progress Display
     const progressContainer = document.createElement("div");
@@ -35,7 +40,12 @@ export function initEcoHero() {
         <p><strong>Goal:</strong> <span id="goalText">Not set</span></p>
         <p><strong>Recycled:</strong> <span id="progress">0</span></p>
         <progress id="progressBar" value="0" max="10"></progress>
-        <button id="logRecycle" class="blue">+ Log Item</button> <!-- Added class for styling -->
+        <div class='log-buttons-container'>
+            <button id='logRecycle' class="blue">+ Log Item</button>
+            <button id='removeLog'class='yellow>Remove Log Item</button>
+        </div>
+            
+            <!-- Added class for styling -->
     `;
 
     // Append elements
@@ -43,7 +53,7 @@ export function initEcoHero() {
     app.appendChild(goalInput);
     app.appendChild(setGoalBtn);
     app.appendChild(resetGoalBtn);
-    app.appendChild(removeLogBtn);
+    //app.appendChild(removeLogBtn); // removed button from app here
     app.appendChild(progressContainer);
 
     // Load saved goal if it exists
@@ -99,9 +109,9 @@ export function initEcoHero() {
     });
 
     // Handle Remove Log Item
-    removeLogBtn.addEventListener("click", () => {
-        let progress = parseInt(localStorage.getItem("progress") || "0");
-
+    document.getElementById('removeLog').addEventListener('click', () => {
+        let progress = parseInt(localStorage.getItem('progress') || "0");
+    
         if (progress > 0) {
             progress--;
             localStorage.setItem("progress", progress);
