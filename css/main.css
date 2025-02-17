@@ -204,7 +204,7 @@ a:hover {
 
 #map-container {
   display: content;
-  z-index: -1;
+  margin-top: 275px;
 }
 
 
