@@ -6,7 +6,7 @@ function Header(mainDiv) {
     textContent: 'MyStewardship',
     className: 'heading' }); 
     
-const subTitle =createElement('h2', {className: 'sub-title', textContent: 'Doing my part to care for Mother Earth!'});
+const subTitle =createElement('h2', {className: 'sub-title', textContent: 'Doing your part to care for Mother Earth!'});
   // nav items
   const page1 = createElement('a', {
     href: '/#/page1',

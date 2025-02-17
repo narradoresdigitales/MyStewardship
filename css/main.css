@@ -117,29 +117,49 @@ body {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #3b571a; /* Light green for mindfulness */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .section h3 {
   color: black; /* Dark grey for better readability on light backgrounds */
+  font-size: 1.3rem;
 }
 
 .section p {
   color: black;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 10px 0;
 }
 
 a {
-  color: black;
+  color: #3a221b;
+  font-size: 1.25rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+  
 }
 
 /* Mindfulness section styles */
 .mindfulness, .eco-friendly {
   background-color:#94e933; /* Light green for mindfulness */
   color: black;
+
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mindfulness:hover {
@@ -151,6 +171,18 @@ a:hover {
 .eco-friendly:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mindfulness h3, .eco-friendly h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.mindfulness p, .eco-friendly p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+  margin-bottom: 25px;
 }
 
 /* Animations */
