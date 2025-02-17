@@ -76,8 +76,10 @@ nav.querySelectorAll('a').forEach(link => {
 
 function Footer() {
   const copyright = createElement('span', {
-    textContent: `Copyright © ${new Date().getFullYear()}`,
+    textContent: `Copyright © ${new Date().getFullYear()} |
+    'Thanks for visiting! Keep coding 🚀 | M. 'Sil' Palmer`
   });
+
 
   return createElement('footer', { className: 'footer-container'}, [copyright]);
 }
