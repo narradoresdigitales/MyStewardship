@@ -26,10 +26,47 @@ function Page4() {
             videoUrl: "https://www.youtube.com/embed/1g-GGwahYDw"
         },
         {
-            title: "Lets Recylce! Fun Facts About Recycling",
+            title: "Lets Recycle! Fun Facts About Recycling",
             description: "Common recycling mistakes and how to avoid them.",
             videoUrl: "https://www.youtube.com/embed/4sIFhHjAEj0"
-        }
+        },
+
+        {   title: "How To Recycle Old Electronics Safely",
+            description: "Common recycling mistakes and how to avoid them.",
+            videoUrl: "https://www.youtube.com/embed/6pTOTltnSI4"
+        },
+
+        {   title: "How To Recycle Solar Panels and Wind Turbines",
+            description: "Common recycling mistakes and how to avoid them.",
+            videoUrl: "https://www.youtube.com/embed/SST0Y_KN6G4"
+        },
+
+        {   title: "How To Recycle Glass",
+            description: "Common recycling mistakes and how to avoid them.",
+            videoUrl: "https://www.youtube.com/embed/SsyjGchbkVY"
+        },
+
+        {   title: "Recycling Waste Clothes",
+            description: "How to recycle fabric scraps for stuffing.",
+            videoUrl: "https://www.youtube.com/embed/oc_r2uieI1o"
+        },
+
+        {   title: "3 Easy Way To Reuse/Recycle Empty Tissue Rolls",
+            description: " How To Recycle Tissue Rolls Best Out Of Waste.",
+            videoUrl: "https://www.youtube.com/embed/rwJIKPMnNwo"
+        },
+
+        {   title: "How To Recycle Tires?",
+            description: " How To Recycle Tissue Rolls Best Out Of Waste.",
+            videoUrl: "https://www.youtube.com/embed/O734dbGYsL0"
+        },
+
+        {   title: "How To Recycle Corporate E-Waste the Right Way!",
+            description: "Save Money & Stay Compliant`",
+            videoUrl: "https://www.youtube.com/embed/kXq2SbcL2GU"
+        },
+
+
     ];
 
     // Creating a container for recommended videos
