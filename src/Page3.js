@@ -20,7 +20,7 @@ function Page3() {
 
   // Add list items to the unordered list
   for (const item of items) {
-      const li = createElement('li', { textContent:`✅ ${item}` });
+      const li = createElement('li', { className: 'search-tips', textContent:`✅ ${item}` });
       ul.appendChild(li);
   }
   
@@ -49,7 +49,7 @@ function Page3() {
   ]);
 
   // Create a parent container for the page elements
-  const pageContainer = createElement('div', {}, [
+  const pageContainer = createElement('div', {className: 'page-container'}, [
     searchTitle,
     searchInstructions,
     pSearch,

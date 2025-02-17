@@ -107,11 +107,7 @@ body {
   background-color: green;
 }
 
-h2 {
-  text-align: center;
-  margin-top: 20px;
-  color: red;
-}
+
 
 .section {
   padding: 20px;
@@ -171,7 +167,10 @@ a:hover {
 
 /* <p> element */
 
-
+.page-container {
+  margin: 0 10%;
+  padding: 20px;
+}
 
 #map-container {
   display: content;
@@ -179,8 +178,14 @@ a:hover {
 }
 
 
-.tips-p {
-  color: red;
+.tips-p, .search-p {
+  color:  black;
+  background-color: #f1c40f;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  border: 1px solid #f39c12; /* Adds a border with a matching color */
+
 }
 
 /* <ul> element */
@@ -190,9 +195,7 @@ a:hover {
 
 /* 2nd <p> element */
 
-.search-p {
-  color: blue;
-}
+
 
 
 /* Search Input */
@@ -231,16 +234,17 @@ a:hover {
 #searchButton {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #3498db;
-  color:#388E3C; /* Darker green for buttons */
+  background-color: rgb(91, 24, 12);
+  color: white; /* Darker green for buttons */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #searchButton:hover {
-  background-color: #4CAF50; /* Slightly lighter green on hover */
+  background-color: #d35400; /* Lighter orange when hovered */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 
@@ -364,10 +368,11 @@ a:hover {
 
 /* Title and description styling */
 .video-card h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
-  color: #2c3e50;
+  color: #34495e;
 }
 
 .video-card p {
@@ -393,8 +398,11 @@ a:hover {
 h2 {
   text-align: center;
   font-size: 2rem;
-  color: black;
-  margin-bottom: 20px;
+  color: white;
+  background-color: #3a221b; /* Dark background color */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 50px;
 }
 
 /* Search Input */
@@ -411,6 +419,16 @@ h2 {
 
 #search-input:focus {
   border-color: brown; /* Highlight border color on focus */
+}
+
+
+.search-tips li {
+  color: #2c3e50; /* Darker text for better contrast */
+  font-size: 1rem;
+  background-color: #f9f9f9; /* Light background for the list item */
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
 }
 
 /* Search Button */
@@ -476,7 +494,7 @@ h2 {
 /* Title for the gamify section */
 .gamify h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: white;
   margin-bottom: 20px;
   
 }
@@ -529,6 +547,7 @@ h2 {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  
 }
 
 #progressBar {
