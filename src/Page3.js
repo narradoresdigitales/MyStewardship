@@ -2,10 +2,10 @@ import { createElement } from './utils';
 import { fetchYouTubeVideos } from './youTubeSearch';
 
 function Page3() {
-  const searchTitle = createElement('h2', { textContent: 'Learn to be More-Eco-Friendly' });
+  
 
   const searchInstructions = createElement('p', { textContent: 
-      ' Looking for ways to live a greener lifestyle? Use the search bar below to find YouTube videos on:', className: 'tips-p'
+      ' Looking for ways to be more eco-friendly?', className: 'tips-p'
   });
 
   const ul = createElement('ul', {className: 'search-tips'}, []);
@@ -27,7 +27,7 @@ function Page3() {
   const pSearch = createElement('p', { innerHTML:'Simply enter a topic (e.g., "how to recycle plastic") and hit search!', className: 'search-p' });
 
   // Search suggestions
-  const title = createElement('h2', { textContent: 'Search YouTube Videos' });
+  const title = createElement('h3', { textContent: 'Search YouTube Videos' });
 
   const searchInput = createElement('input', {
     id: 'search-input',
@@ -50,7 +50,7 @@ function Page3() {
 
   // Create a parent container for the page elements
   const pageContainer = createElement('div', {className: 'page-container'}, [
-    searchTitle,
+    
     searchInstructions,
     pSearch,
     ul,
