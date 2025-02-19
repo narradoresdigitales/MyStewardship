@@ -149,7 +149,7 @@ a:hover {
 
 /* Mindfulness section styles */
 .mindfulness, .eco-friendly {
-  background-color:#94e933; /* Light green for mindfulness */
+  background-color: white; /* Light green for mindfulness */
   color: black;
 
   padding: 20px;
@@ -518,7 +518,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: greenyellow; /* Light background for a clean look */
+  background-color: white; /* Light background for a clean look */
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 30px auto;
