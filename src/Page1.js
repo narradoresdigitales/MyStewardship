@@ -32,7 +32,7 @@ function Page1() {
       createElement('p', {textContent: 'Live a more sustainable life. On this page, you can easily search for YouTube videos covering a wide range of eco-friendly topics. From tips on sustainable living and zero waste practices to guides on recycling and energy-saving hacks, you’ll find valuable resources to help you make greener choices. Simply enter a topic in the search bar (e.g., "how to recycle plastic"), and explore informative videos that will inspire you to live more eco-consciously.'}),
       createElement('a', {
         href: '/#/page3',
-        textContent: 'Begin your learning journey to become an Eco-Hero!'
+        textContent: 'Begin your journey to becoming an Eco-Hero!'
       })
     ]
   );
@@ -41,11 +41,11 @@ function Page1() {
 
 const LearningHub = createElement('div', {
   className: 'section eco-friendly'}, [
-    createElement('h3', {textContent: 'About LearningHUb practices'}),
+    createElement('h3', {textContent: 'About LearningHUb'}),
     createElement('p', {textContent: 'On this page, you will find a curated collection of recommended videos to help you learn more about recycling and eco-friendly practices. The videos cover topics like properly recycling materials, reducing plastic waste, and interesting facts about recycling. Each video is paired with a brief description to help guide your learning. Whether you are new to sustainable living or looking to deepen your knowledge, these videos are a great resource to help you get started.'}),
     createElement('a', {
       href: '/#/page4',
-      textContent:  'Begin learing about eco-friendly practices with these recommended videos.'
+      textContent:  'View recommended videos.'
     })
   ]
 );
